@@ -41,10 +41,6 @@ table {
   border-spacing: 1em 1em;
 }
 
-#multiplyButton {
-  font-family: sans-serif;
-}
-
 @media only screen and (min-width: 30em) and (max-width: 80em){
   body {
     font-size: 1.3em;

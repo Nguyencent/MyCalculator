@@ -23,7 +23,7 @@ $(document).ready(function(){
 
   $("td").click(function(event){
 
-    var operators = ["C", "/", "x", "-", "+","="];
+    var operators = ["C", "/", "*", "-", "+","="];
     var charPressed = event.target.innerText;
     var existingDisplayNum = $("#numDisplay div")["0"].innerText;
     console.log(charPressed);
@@ -68,7 +68,7 @@ $(document).ready(function(){
         numTerm += 1;
         $("#numDisplay div").html("")
         break;
-      case "x":
+      case "*":
         changeFontSize()
         console.log("multiply");
         testingTerm.push(existingDisplayNum)
