@@ -23,7 +23,7 @@ $(document).ready(function(){
 
   $("td").click(function(event){
 
-    var operators = ["C", "÷", "x", "-", "+","="];
+    var operators = ["C", "/", "x", "-", "+","="];
     var charPressed = event.target.innerText;
     var existingDisplayNum = $("#numDisplay div")["0"].innerText;
     console.log(charPressed);
@@ -58,9 +58,9 @@ $(document).ready(function(){
         $("#numDisplay div").html("")
         console.log("cleared");
         break;
-      case "÷":
+      case "/":
         changeFontSize()
-        console.log("multiply");
+        console.log("divide");
         testingTerm.push(existingDisplayNum)
         console.log(testingTerm[numTerm])
         operatorTerm.push("/")
