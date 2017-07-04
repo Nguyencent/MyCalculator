@@ -1,0 +1,46 @@
+body {
+
+}
+
+#numDisplay {
+  height: 5em;
+  vertical-align: bottom;
+  text-align: right;
+}
+
+#displayDiv {
+  font-size: 2em;
+}
+
+td {
+  border: 1px solid black;
+  height: 2em;
+  width: 2em;
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  border: 1px solid black;
+  border-collapse: separate;
+  border-spacing: 1em 1em;
+}
+
+@media only screen and (min-width: 30em) and (max-width: 80em){
+  body {
+    font-size: 1.3em;
+  }
+  #numDisplay {
+    height: 15em;
+  }
+  #displayDiv {
+    font-size: 5em;
+  }
+  .buttonText {
+    font-size: 3em;
+  }
+  td {
+    height: 10em;
+    width: 10em;
+  }
+}
