@@ -2,20 +2,25 @@ body {
 
 }
 
+.buttonText {
+  font-size: 3em;
+}
+
 #numDisplay {
-  height: 5em;
+  height: 12em;
   vertical-align: bottom;
   text-align: right;
 }
 
 #displayDiv {
-  font-size: 2em;
+  font-size: 5em;
+  word-wrap: break-word;
 }
 
 td {
   border: 1px solid black;
-  height: 2em;
-  width: 2em;
+  height: 7em;
+  width: 7em;
   text-align: center;
 }
 
@@ -24,6 +29,10 @@ table {
   border: 1px solid black;
   border-collapse: separate;
   border-spacing: 1em 1em;
+}
+
+#multiplyButton {
+  font-family: sans-serif;
 }
 
 @media only screen and (min-width: 30em) and (max-width: 80em){
