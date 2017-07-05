@@ -24,6 +24,7 @@ $(document).ready(function(){
   $("td").click(function(event){
 
     var operators = ["C", "/", "*", "-", "+","="];
+    var numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
     var charPressed = event.target.innerText;
     var existingDisplayNum = $("#numDisplay div")["0"].innerText;
     console.log(charPressed);
@@ -44,9 +45,7 @@ $(document).ready(function(){
     if (existingDisplayNum.length){
       console.log(existingDisplayNum)
     }
-    if ($.inArray(charPressed, operators) == -1) {
-      $("#numDisplay div").html(existingDisplayNum + charPressed);
-    }
+
     switch (charPressed) {
       case "C":
         changeFontSize()
@@ -118,15 +117,17 @@ $(document).ready(function(){
           }
         }
         console.log(total);
-        var numTotal = eval(total);
-        $("#numDisplay div").html(numTotal)
-        console.log(numTotal);
+        console.log("isnumber")
         numTerm = 0
         testingTerm = []
         operatorTerm = []
+        var numTotal = eval(total);
+        $("#numDisplay div").html(numTotal)
+        console.log(numTotal);
         break;
       default:
-        console.log("number pressed");
+        console.log("is anumber")
+        $("#numDisplay div").html(existingDisplayNum + charPressed);
     }
   });
 });
